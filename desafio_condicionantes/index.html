@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header><h1>Desafio condicionantes</h1></header>
+      <section>
+        <h2>Ejercicio 1</h2>
+        <div class="borde">
+          <img
+            id="imagenp"
+            src="./assets/img/lindo-perro-saltando-fondo-aislado-transparente-ai_866663-11492.avif"
+            alt="perro saltando de frente"
+            onclick="
+            var perro = document.querySelector('#imagenp')
+            if(perro.style.border != '2px solid red'){
+               perro.style.border = '2px solid red'
+            }
+            else {
+                perro.style.border = 'none'
+            } "
+          />
+        </div>
+      </section>
+      <section>
+        <h2>Ejercicio 2</h2>
+        <div class="desafioII">
+          <img class="db1" src="./assets/img/descarga.jpeg" alt="dbz" />
+          <img class="dbz1" src="./assets/img/descarga (1).jpeg" alt="dbz" />
+          <img class="dbz1" src="./assets/img/images.jpeg" alt="dbz" />
+        </div>
+        <div class="desafioII">
+          <input id="sticker-A" type="text" />
+          <input id="sticker-B" type="text" />
+          <input id="sticker-C" type="text" />
+        </div>
+        <div class="botoninput">
+          <p id="result"></p>
+          <button
+            onclick="
+        var in_A = document.querySelector('#sticker-A').value; 
+        var in_B = document.querySelector('#sticker-B').value;
+        var in_C = document.querySelector('#sticker-C').value;
+        var total = Number(in_A) + Number(in_B) + Number(in_C);
+        var resulta = document.querySelector('#result');            
+        if (total <= 10){
+           resulta.innerHTML = 'Llevas'+''+ total;
+        }
+        else{
+            resulta.innerHTML = 'Llevas demasiados stickers'
+        }
+        "
+          > verificar </button>
+        </div>
+      </section>
+      <section>
+        <h2>ejercicio 3</h2>
+        <div class="borderselect">
+          <h3>Ingresa Contraseña</h3>
+          <div>
+            <select name="N1" id="primer">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+            <select name="N2" id="second">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+            <select name="N3" id="tri">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </div>
+          <button
+            class="selectcont"
+            onclick="
+        var uno = document.querySelector('#primer'); 
+        var dos = document.querySelector('#second');
+        var tres = document.querySelector('#tri');
+        var resultaselect = document.querySelector('#resultselect1');     
+        var resultado    ;
+        
+        if (uno.value == '9' && dos.value == '1' && tres.value == '1' ){
+           resultado = 'Password 1 Correcto';
+        }
+        else if (uno.value == '7' && dos.value == '1' && tres.value == '4' ){
+           resultado = 'Password 2 Correcto';
+        }
+        else{
+            resultado = ' password incorrecto';
+        }
+        resultaselect.innerHTML = resultado;
+        " >
+            Ingresar
+          </button>
+          <p id="resultselect1"></p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./assets/js/index.js"></script>
+</html>

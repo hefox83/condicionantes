@@ -1,0 +1,52 @@
+body{
+    background-color: green;
+    color: aliceblue;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-weight: 600;
+    font-style: italic;
+}
+.borde{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30x;
+    padding: 50px;
+}
+#imagenp{
+    width: 250px;
+}
+h2{display: flex;
+justify-content: center;
+color: aliceblue;}
+.desafioII{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+.dbz1{
+    height: 195px;
+    width: 300px;
+}
+.botoninput{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+.borderselect{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    justify-items: center;
+    align-items: center;
+    margin-left: 35%;
+    width: 30%;
+}
+.selectcont{
+    margin: 15px;
+}
